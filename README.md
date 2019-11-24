@@ -23,7 +23,7 @@ __
 | Behavior        | Input           | Outcome  |
 | ------------- |:-------------:| -----:|
 | The program will take an age. | "21" | "21" |
-
+| The program will take a life expectancy. | "100" | "100" |
 ### Support and contact details
 
 _ike.esquivelpilloud@gmail.com_
