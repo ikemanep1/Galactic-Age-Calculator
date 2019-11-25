@@ -17,7 +17,7 @@ _This program is an age calculator. The user submits their age, and the result s
 
 # Known Bugs
 
-__
+_Tests 7 through 14 fail, though the code still works._
 
 # specs
 | Behavior        | Input           | Outcome  |

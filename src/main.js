@@ -29,7 +29,5 @@ $(document).ready(function(){
     $("p#venusExceedsExpectations").text(calculator.venusBeaten);
     $("p#marsExceedsExpectations").text(calculator.marsBeaten);
     $("p#jupiterExceedsExpectations").text(calculator.jupiterBeaten);
-    console.log(age);
-    console.log(expectancy);
   });
 });

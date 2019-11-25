@@ -1,3 +1,114 @@
+body {
+  background: radial-gradient(circle, #304747, #ff66ff, #000000);
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  border: 3px solid #ff9900;
+  padding: 4px;
+  color: #ffff1c;
+  background-color: #5a5b4f;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
+li {
+  text-align: center;;
+  padding: 4px;
+  color: #ffff1c;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
+ul {
+  text-align: center;;
+  padding: 4px;
+  color: #ffff1c;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
+br {
+  text-align: center;;
+  padding: 4px;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
+.intro {
+  text-align: center;
+  border: 3px solid #ff9900;
+  padding: 4px;
+  color: #ffff1c;
+  background-color: #5a5b4f;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
+.outputIntro {
+  text-align: center;
+  border: 3px solid #ff9900;
+  padding: 4px;
+  color: #ffff1c;
+  background-color: #5a5b4f;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
+.outputs {
+  text-align: center;
+  border: 3px solid #ff9900;
+  padding: 4px;
+  color: #ffff1c;
+  background-color: #5a5b4f;
+  margin-top: 15px;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
+.extraResults {
+  text-align: center;
+  border: 3px solid #ff9900;
+  padding: 4px;
+  color: #ffff1c;
+  background-color: #5a5b4f;
+  margin-top: 15px;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
+#inputs {
+  text-align: center;
+  border: 3px solid #ff9900;
+  padding: 4px;
+  color: #ffff1c;
+  background-color: #5a5b4f;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
 .results {
   display: none;
+  text-align: center;;
+  padding: 4px;
+  color: #ffff1c;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
+.planetaryBeatenResults {
+  text-align: center;
+  padding: 4px;
+  color: #ffff1c;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
+}
+.results p {
+  text-align: center;;
+  padding: 4px;
+  color: #ffff1c;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: cursive;
 }
