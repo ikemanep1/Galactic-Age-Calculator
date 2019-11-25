@@ -2,14 +2,14 @@ import { Storage } from './../src/class.js';
 
 describe ( 'Storage', () => {
   const collectionTest = new Storage(21, 100);
-  
+
   test('should successfully make age containing what is taken from the 1stinput', () => {
     let collectionTest = new Storage(21);
     expect(collectionTest.age).toEqual(21);
   });
 
   test('should successfully make expectancy containing what is taken from the 2ndinput', () => {
-    let collectionTest = new Storage(100);
+    let collectionTest = new Storage(21, 100);
     expect(collectionTest.expectancy).toEqual(100);
   });
 
@@ -52,3 +52,24 @@ describe ( 'Storage', () => {
     collectionTest.addExpectancy(21, 100);
     expect(collectionTest.jupiterExpectancy).toEqual(7);
   });
+
+  test("should successfully calculate the number of years past a given life expectancy for someone living on Mercury that has exceeded their life expectancy", () => {
+    collectionTest.mercuryExpectancyBeatenCheck(500, 100);
+    expect(collectionTest.mercuryRemainder).toEqual(3750);
+  });
+
+  test("should successfully calculate the number of years past a given life expectancy for someone living on Mercury that has exceeded their life expectancy", () => {
+    collectionTest.venusExpectancyBeatenCheck(500, 100);
+    expect(collectionTest.venusRemainder).toEqual(1451);
+  });
+
+  test("should successfully calculate the number of years past a given life expectancy for someone living on mars that has exceeded their life expectancy", () => {
+    collectionTest.mercuryExpectancyBeatenCheck(500, 100);
+    expect(collectionTest.marsRemainder).toEqual(477);
+  });
+
+  test("should successfully calculate the number of years past a given life expectancy for someone living on jupiter that has exceeded their life expectancy", () => {
+    collectionTest.mercuryExpectancyBeatenCheck(500, 100);
+    expect(collectionTest.jupiterRemainder).toEqual(76);
+  });
+});
