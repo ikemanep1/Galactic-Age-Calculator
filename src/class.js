@@ -8,7 +8,7 @@ export function Storage(age, expectancy) {
 
 Storage.prototype.addAge = function(age) {
   if (this.age === "" ) {
-  return ("please enter an actual number");
+    return ("please enter an actual number");
   } else {
     this.mercuryAge = Math.floor(age / .24);
     this.venusAge = Math.floor(age / .62);
@@ -28,28 +28,28 @@ Storage.prototype.addExpectancy = function(expectancy) {
   }
 };
 
-Storage.prototype.mercuryExpectancyBeatenCheck = function(age, expectancy) {
+Storage.prototype.mercuryExpectancyBeatenCheck = function() {
   let mercuryRemainder = this.mercuryAge - this.mercuryExpectancy;
   if (mercuryRemainder > 0) {
     this.mercuryBeaten = "You have outlived your life expectancy by " + mercuryRemainder + " years on Mercury!";
   }
 };
 
-Storage.prototype.jupiterExpectancyBeatenCheck = function(age, expectancy) {
+Storage.prototype.jupiterExpectancyBeatenCheck = function() {
   let jupiterRemainder = this.jupiterAge - this.jupiterExpectancy;
   if (jupiterRemainder > 0) {
     this.jupiterBeaten = "You have outlived your life expectancy by " + jupiterRemainder + " years on Jupiter!";
   }
 };
 
-Storage.prototype.venusExpectancyBeatenCheck = function(age, expectancy) {
+Storage.prototype.venusExpectancyBeatenCheck = function() {
   let venusRemainder = this.venusAge - this.venusExpectancy;
   if (venusRemainder > 0) {
     this.venusBeaten = "You have outlived your life expectancy by " + venusRemainder + " years on Venus!";
   }
 };
 
-Storage.prototype.marsExpectancyBeatenCheck = function(age, expectancy) {
+Storage.prototype.marsExpectancyBeatenCheck = function() {
   let marsRemainder = this.marsAge - this.marsExpectancy;
   if (marsRemainder > 0) {
     this.marsBeaten = "You have outlived your life expectancy by " + marsRemainder + " years on Mars!";
