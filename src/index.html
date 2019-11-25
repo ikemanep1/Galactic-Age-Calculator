@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <h1>Interplanetary age calculator!</h1>
+    <p>Planets in our solar system have differing orbital patterns. What does this mean? Well, a year on Mars is much different than a year on Earth, ditto with Jupiter, Saturn, the list goes on. You could be less than one year old on one planet, and over a hundred on another! Tell me your age and I'll tell you how old you'd be on other planets.</p>
+    <form id="inputs" action="index.html" method="post">
+      <label for="ageInput">Assuming you're on Earth, how old are you?</label>
+      <input id="ageInput" type="text">
+      <label for="lifeInput">Earth is a big place, and people have different lifetime expectancies. Please, let us know how long you think you'll live.</label>
+      <input id="lifeInput" type="text">
+      <button type="submit" name="button">submit!</button>
+    </form>
+    <div class="results">
+      <p>This is how old you are:</p>
+      <ul class="planetaryAges">
+        <li>Age on Mercury: <span id="mercuryAge"></span></li>
+        <li>Age on Venus: <span id="venusAge"></span></li>
+        <li>Age on Mars: <span id="marsAge"></span></li>
+        <li>Age on Jupiter: <span id="jupiterAge"></span></li>
+      </ul>
+      <p>This is how long you have to live!</p>
+      <ul class="planetaryExpectancies">
+        <li>Expected years to live on Mercury: <span id="mercuryExpectancy"></span></li>
+        <li>Expected years to live on Venus: <span id="venusExpectancy"></span></li>
+        <li>Expected years to live on Mars: <span id="marsExpectancy"></span></li>
+        <li>Expected years to live on Jupiter: <span id="jupiterExpectancy"></span></li>
+      </ul>
+      <br>
+      <div class="planetaryBeatenResults">
+        <p id="mercuryExceedsExpectations"></p>
+        <p id="venusExceedsExpectations"></p>
+        <p id="marsExceedsExpectations"></p>
+        <p id="jupiterExceedsExpectations"></p>
+      </div>
+    </div>
+  </body>
+</html>
