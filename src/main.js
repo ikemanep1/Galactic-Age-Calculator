@@ -8,6 +8,8 @@ $(document).ready(function(){
     event.preventDefault();
     let age = $("input#ageInput").val();
     let expectancy = $("input#lifeInput").val();
+    console.log(typeof age);
+    console.log(typeof expectancy);
     let calculator = new Storage(age, expectancy);
     calculator.addAge(age);
     calculator.addExpectancy(expectancy);
@@ -15,6 +17,10 @@ $(document).ready(function(){
     calculator.venusExpectancyBeatenCheck();
     calculator.marsExpectancyBeatenCheck();
     calculator.jupiterExpectancyBeatenCheck();
+    console.log(calculator.mercuryBeaten);
+    console.log(calculator.venusBeaten);
+    console.log(calculator.marsBeaten);
+    console.log(calculator.jupiterBeaten);
     $("div.results").show();
     $("span#mercuryAge").text(""+ calculator.mercuryAge + " years");
     $("span#venusAge").text(""+ calculator.venusAge + " years");

@@ -33,7 +33,6 @@ Storage.prototype.mercuryExpectancyBeatenCheck = function() {
   if (mercuryRemainder > 0) {
     this.mercuryBeaten = "You have outlived your life expectancy by " + mercuryRemainder + " years on Mercury!";
   }
-  return mercuryRemainder;
 };
 
 Storage.prototype.jupiterExpectancyBeatenCheck = function() {
@@ -41,7 +40,6 @@ Storage.prototype.jupiterExpectancyBeatenCheck = function() {
   if (jupiterRemainder > 0) {
     this.jupiterBeaten = "You have outlived your life expectancy by " + jupiterRemainder + " years on Jupiter!";
   }
-  return jupiterRemainder;
 };
 
 Storage.prototype.venusExpectancyBeatenCheck = function() {
@@ -49,7 +47,6 @@ Storage.prototype.venusExpectancyBeatenCheck = function() {
   if (venusRemainder > 0) {
     this.venusBeaten = "You have outlived your life expectancy by " + venusRemainder + " years on Venus!";
   }
-  return venusRemainder;
 };
 
 Storage.prototype.marsExpectancyBeatenCheck = function() {
@@ -57,5 +54,11 @@ Storage.prototype.marsExpectancyBeatenCheck = function() {
   if (marsRemainder > 0) {
     this.marsBeaten = "You have outlived your life expectancy by " + marsRemainder + " years on Mars!";
   }
-  return marsRemainder;
 };
+// Storage.prototype.ExpectancyBeatenCheck = function() {
+//   let mercuryRemainder = (age - expectancy) / .24;
+//   let venusRemainder = (age - expectancy) / .62;
+//   let marsRemainder = (age - expectancy) / 1.88;
+//   let jupiterRemainder = (age - expectancy) / 11.86;
+//   if ()
+// }

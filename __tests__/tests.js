@@ -55,22 +55,30 @@ describe ( 'Storage', () => {
   });
 
   test("should successfully calculate the number of years past a given life expectancy for someone living on Mercury that has exceeded their life expectancy", () => {
+    oldTest.addAge();
+    oldTest.addExpectancy();
     oldTest.mercuryExpectancyBeatenCheck();
-    expect(mercuryRemainder).toEqual(3750);
+    expect(oldTest.mercuryBeaten).toEqual("You have outlived your life expectancy by 3750 years on Mercury!");
   });
 
   test("should successfully calculate the number of years past a given life expectancy for someone living on Mercury that has exceeded their life expectancy", () => {
+    oldTest.addAge();
+    oldTest.addExpectancy();
     oldTest.venusExpectancyBeatenCheck();
-    expect(venusRemainder).toEqual(1451);
+    expect(oldTest.venusBeaten).toEqual("You have outlived your life expectancy by 1451 years on Venus!");
   });
 
   test("should successfully calculate the number of years past a given life expectancy for someone living on mars that has exceeded their life expectancy", () => {
-    oldTest.mercuryExpectancyBeatenCheck();
-    expect(marsRemainder).toEqual(477);
+    oldTest.addAge();
+    oldTest.addExpectancy();
+    oldTest.marsExpectancyBeatenCheck();
+    expect(oldTest.marsBeaten).toEqual("You have outlived your life expectancy by 477 years on Mars!");
   });
 
   test("should successfully calculate the number of years past a given life expectancy for someone living on jupiter that has exceeded their life expectancy", () => {
-    oldTest.mercuryExpectancyBeatenCheck();
-    expect(jupiterRemainder).toEqual(76);
+    oldTest.addAge();
+    oldTest.addExpectancy();
+    oldTest.jupiterExpectancyBeatenCheck();
+    expect(oldTest.jupiterBeaten).toEqual("You have outlived your life expectancy by 76 years on Jupiter!");
   });
 });
